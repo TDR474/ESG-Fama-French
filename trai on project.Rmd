@@ -9,11 +9,11 @@ output: html_document
 #install.packages("readxl")
 library(readxl)
  library(stringr)
-df2017=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-3.xlsx","Peer View",skip=2)
-df2018=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-4.xlsx","Peer View",skip=2)
-df2019=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-5.xlsx","Peer View",skip=2)
-df2020=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-6.xlsx","Peer View",skip=2)
-df2021=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-7.xlsx","Peer View",skip=2)
+df2017=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-3.xlsx","Peer View",skip=2)
+df2018=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-4.xlsx","Peer View",skip=2)
+df2019=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-5.xlsx","Peer View",skip=2)
+df2020=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-6.xlsx","Peer View",skip=2)
+df2021=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-7.xlsx","Peer View",skip=2)
 df=df2017
 df <- merge(df,df2018,by=c("Company Name"), all=TRUE,suffixes = c(".2017",".2018"))
 df <- merge(df,df2019,by=c("Company Name"), all=TRUE,suffixes = c("",".2019"))
@@ -38,19 +38,19 @@ summary(fit)
 ```{r}
 library(readxl)
  library(stringr)
-df2017=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-3.xlsx","Peer View",skip=2)
+df2017=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-3.xlsx","Peer View",skip=2)
 names(df2017)<-str_replace_all(names(df2017), c(" " = "_" , "," = "" ))
 df2017 <- subset(df2017, HQ=="US") 
-df2018=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-4.xlsx","Peer View",skip=2)
+df2018=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-4.xlsx","Peer View",skip=2)
 names(df2018)<-str_replace_all(names(df2018), c(" " = "_" , "," = "" ))
 df2018 <- subset(df2018, HQ=="US") 
-df2019=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-5.xlsx","Peer View",skip=2)
+df2019=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-5.xlsx","Peer View",skip=2)
 names(df2019)<-str_replace_all(names(df2019), c(" " = "_" , "," = "" ))
 df2019 <- subset(df2019, HQ=="US") 
-df2020=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-6.xlsx","Peer View",skip=2)
+df2020=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-6.xlsx","Peer View",skip=2)
 names(df2020)<-str_replace_all(names(df2020), c(" " = "_" , "," = "" ))
 df2020 <- subset(df2020, HQ=="US") 
-df2021=read_excel("/Users/ansonkong/Downloads/Peer View Table for AAPL.O-7.xlsx","Peer View",skip=2)
+df2021=read_excel("/Users/ansonkong/Desktop/project-draft/Peer View Table for AAPL.O-7.xlsx","Peer View",skip=2)
 names(df2021)<-str_replace_all(names(df2017), c(" " = "_" , "," = "" ))
 df2021 <- subset(df2021, HQ=="US") 
 df=df2017
@@ -65,17 +65,19 @@ colnames(df)
 summary(df)
 ```
 
-## Including Plots
+In ideal situation, I want to test is the rating inelastic so yearly data to divide them into group
 
-You can also embed plots, for example:
+The following are symbols of the stock, in our data, we only have company name, not symbol, bad for stock anlysis
 
 ```{r pressure, echo=FALSE}
-nyse <- read.csv("/Users/ansonkong/Downloads/nyse-listed_csv.csv")
-other<-read.csv("/Users/ansonkong/Downloads/other-listed_csv.csv")
+nyse <- read.csv("/Users/ansonkong/Desktop/project-draft/nyse-listed_csv.csv")
+other<-read.csv("/Users/ansonkong/Desktop/project-draft/other-listed_csv.csv")
 library(dplyr)
 total <- bind_rows(nyse, other)
-sp500 <- read.csv("/Users/ansonkong/Downloads/sp500-master/S&P 500 Historical Components & Changes.csv")
-
+```
+The next step will be keep only S&P 500 stock, the github link below have a very good dataset showcase whihc stock in S&P 500 each day
+A kind of useless api
+```{r}
 require(httr)
 
 headers = c(
@@ -89,4 +91,6 @@ params = list(
 res <- httr::GET(url = 'https://financialmodelingprep.com/api/v3/historical/sp500_constituent', httr::add_headers(.headers=headers), query = params)
 
 ```
-#another possible dataset https://github.com/fja05680/sp500/blob/master/S%26P%20500%20Historical%20Components%20%26%20Changes(10-14-2022).csv
+another possible dataset https://github.com/fja05680/sp500/blob/master/S%26P%20500%20Historical%20Components%20%26%20Changes(10-14-2022).csv
+
+The next case will be use the ticket(symbol)to get adjust closing so we can calculate return with each stock , then joint the esg score to them, then we can use a regression to anlysis
