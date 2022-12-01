@@ -8,7 +8,7 @@
 
 ***df_mutual***:original price data for US equity mutual funds from WRDS+Refinitiv. Extracted from ***mutual_fund_returns_WRDS.xlsx***
 
-***df_spread***: This is the final df that you want to run regression on. This is outputted in ***fama-french_full.xlsx*** if you want to use R or excel for analyses. 
+***df_spread***: This is the final df that you want to run regression on. This is outputted in ***fama-french_full.xlsx*** if you want to use R or excel for further analyses. 
 
 ## Notes
 
