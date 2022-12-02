@@ -1,4 +1,6 @@
-## Usage
+### JUST USE data_complete.xlsx
+
+## Usage (deprecated)
 
 ***df***: original company-level data from refinitv. Extracted from ***stock_data_super_large.xlsx***
 
