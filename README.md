@@ -3,6 +3,8 @@
 
 **data_complete_2021_11.xlsx** contains data only from 2021-11. It has 448 observations, the most out of any months.
 
+
+
 ### They both have the following structure:
 ## Company Information
 **Reference**: https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/monthly-update/stock-version-2/monthly-stock-file/
@@ -82,7 +84,28 @@
 
 ***Social Dimension***: Social dimension score of the company
 
+
 ## Usage (deprecated)
+
+***data_price***: company-specific information (market cap, monthly return, etc).
+
+***esg_score_finished***: ESG scores after cleaning. 
+
+***data_bond***: bonds data.
+
+***fama_french_betas***: fama-french betas.
+
+***capm_betas***: CAPM betas
+
+***data_complete_missing_beta***: All months all df merged except fama-french and CAPM beta. 
+
+***data_complete_missing_capm_beta***: All months all df merged except CAPM beta. 
+
+***data_complete***:: All months all df above merged.
+
+***data_complete_2021_11***:: 2021-11, with all df above merged.
+
+## (deprecated) Usage 
 
 ***df***: original company-level data from refinitv. Extracted from ***stock_data_super_large.xlsx***
 
