@@ -1,5 +1,9 @@
-# data_complete.xlsx Schema:
+# Data Description
+**data_complete.xlsx** contains all the data from 2019-01-01 to 2021-12-31. It has 1927 non-null observations.
 
+**data_complete_2021_11.xlsx** contains data only from 2021-11. It has 448 observations, the most out of any months.
+
+### They both have the following structure:
 ## Company Information
 **Reference**: https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/monthly-update/stock-version-2/monthly-stock-file/
 
