@@ -3,77 +3,80 @@
 ## Company Information
 **Reference**: https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/monthly-update/stock-version-2/monthly-stock-file/
 
-*ticker*: Ticker of the company
+***ticker***: Ticker of the company
 
-*date*: Date of the data
+***date***: Date of the data
 
-*icb_industry_code*: ICB industry code of the company. (https://www.ftserussell.com/data/industry-classification-benchmark-icb)
+***icb_industry_code***: ICB industry code of the company. (https://www.ftserussell.com/data/industry-classification-benchmark-icb)
 
-*monthly_return*: Monthly return of the company
+***monthly_return***: Monthly return of the company
 
 ## Market(SPY) Data
 **Reference**: https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/monthly-update/stock-version-2/monthly-stock-file/
 
-*snp_monthly_return*: Monthly return of S&P 500
+***snp_monthly_return***: Monthly return of S&P 500
 
 ## Bond Data
 **Reference**: https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/monthly-update/index-treasury-and-inflation/us-treasury-and-inflation-indexes/
-*ten_yr_ytm_rf*: 10-year treasury yield-to-maturity (risk-free rate)
+
+***ten_yr_ytm_rf***: 10-year treasury yield-to-maturity (risk-free rate)
 
 ## Fama-French Betas
 **Reference**: https://wrds-www.wharton.upenn.edu/documents/1582/WRDS_Beta_Suite_Documentation_3T4EcS7.pdf
 
-*b_mkt_fama_french_3fac*: Fama-French 3-factor beta of the company
+***b_mkt_fama_french_3fac***: Fama-French 3-factor beta of the company
 
 
-*b_smb_fama_french_3fac*: Fama-French 3-factor SMB beta of the company
+***b_smb_fama_french_3fac***: Fama-French 3-factor SMB beta of the company
 
-*b_hml_fama_french_3fac*: Fama-French 3-factor HML beta of the company
+***b_hml_fama_french_3fac***: Fama-French 3-factor HML beta of the company
 
-*excess_return_fama_french_3fac*: Fama-French 3-factor excess return of the company
+***excess_return_fama_french_3fac***: Fama-French 3-factor excess return of the company
 
 ## CAPM Betas
 **Reference**: https://wrds-www.wharton.upenn.edu/documents/1582/WRDS_Beta_Suite_Documentation_3T4EcS7.pdf
 
-*b_mkt_capm_mkt*: CAPM beta of the company
+***b_mkt_capm_mkt***: CAPM beta of the company
 
-*excess_return_capm*: CAPM excess return of the company
+***excess_return_capm***: CAPM excess return of the company
 
 ## Company Financial Ratios
 **Reference**:https://wrds-www.wharton.upenn.edu/pages/get-data/financial-ratios-suite-wrds/financial-ratios/financial-ratios-firm-level-by-wrds-beta/
 
-*monthly_mktcap*: Monthly market capitalization of the company
+***monthly_mktcap***: Monthly market capitalization of the company
 
-*monthly_price_volume*: Monthly price volume of the company
+***monthly_price_volume***: Monthly price volume of the company
 
-*book_to_market*: Book to market ratio of the company
+***book_to_market***: Book to market ratio of the company
 
-*capital_ratio*: Capital ratio of the company
+***capital_ratio***: Capital ratio of the company
 
-*enterprise_value_multiple*: Enterprise value multiple of the company
+***enterprise_value_multiple***: Enterprise value multiple of the company
 
-*price_to_book*: Price to book ratio of the company
+***price_to_book***: Price to book ratio of the company
 
-*return_on_equity*: Return on equity of the company
+***return_on_equity***: Return on equity of the company
 
-*inventory_current_asset_frac*: Inventory current asset fraction of the company
+***inventory_current_asset_frac***: Inventory current asset fraction of the company
 
-*receivable_current_asset_frac*: Receivable current asset fraction of the company
+***receivable_current_asset_frac***: Receivable current asset fraction of the company
 
-*cash_ratio*: Cash ratio of the company
+***cash_ratio***: Cash ratio of the company
 
-*effective_tax_rate*: Effective tax rate of the company
+***effective_tax_rate***: Effective tax rate of the company
 
-*debt_assets*: Debt assets ratio of the company
+***debt_assets***: Debt assets ratio of the company
 
 ## ESG Scores
 **Reference**: https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/trucost/esg-scores/esg-daily-scores/
 
-*Economic Governance Dimension*: Economic governance dimension of the company
+***Economic Governance Dimension***: Economic governance dimension of the company
 
-*Environmental Dimension*: Environmental dimension of the company
+***Environmental Dimension***: Environmental dimension of the company
 
-*S&P Global ESG Score*: S&P Global General ESG Score of the company
+***S&P Global ESG Score***: S&P Global General ESG Score of the company
+
+***Social Dimension***: Social dimension score of the company
 
 ## Usage (deprecated)
 
