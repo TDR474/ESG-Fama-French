@@ -85,7 +85,7 @@
 ***Social Dimension***: Social dimension score of the company
 
 
-## Usage (deprecated)
+## Usage
 
 ***data_price***: company-specific information (market cap, monthly return, etc).
 
