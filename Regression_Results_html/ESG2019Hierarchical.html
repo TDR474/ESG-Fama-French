@@ -1,104 +1,98 @@
 
 <table style="text-align:center"><caption><strong>ESG Regression Analysis Complete (2019)</strong></caption>
-<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="7"><em>Dependent variable:</em></td></tr>
-<tr><td></td><td colspan="7" style="border-bottom: 1px solid black"></td></tr>
-<tr><td style="text-align:left"></td><td colspan="7">yearly_return</td></tr>
-<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td><td>(7)</td></tr>
-<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">mktcap</td><td>0.000</td><td>0.000</td><td>0.000</td><td>0.000</td><td>-0.000</td><td>0.000</td><td>0.000</td></tr>
-<tr><td style="text-align:left"></td><td>(0.000)</td><td>(0.000)</td><td>(0.000)</td><td>(0.000)</td><td>(0.000)</td><td>(0.000)</td><td>(0.000)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">book_to_market1</td><td>-0.234<sup>***</sup></td><td>-0.238<sup>***</sup></td><td>-0.236<sup>***</sup></td><td>-0.234<sup>***</sup></td><td>-0.223<sup>***</sup></td><td>-0.207<sup>***</sup></td><td>-0.206<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.032)</td><td>(0.032)</td><td>(0.032)</td><td>(0.033)</td><td>(0.035)</td><td>(0.036)</td><td>(0.036)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">cash_ratio1</td><td>-0.015</td><td>-0.016</td><td>-0.018<sup>*</sup></td><td>-0.019<sup>*</sup></td><td>-0.027<sup>**</sup></td><td>-0.033<sup>***</sup></td><td>-0.031<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.010)</td><td>(0.010)</td><td>(0.011)</td><td>(0.011)</td><td>(0.010)</td><td>(0.011)</td><td>(0.011)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">enterprise_value_multiple1</td><td>0.0001<sup>***</sup></td><td>0.0001<sup>***</sup></td><td>0.0001<sup>***</sup></td><td>0.0001<sup>***</sup></td><td>0.0001<sup>***</sup></td><td>0.0001<sup>***</sup></td><td>0.0001<sup>***</sup></td></tr>
-<tr><td style="text-align:left"></td><td>(0.00002)</td><td>(0.00002)</td><td>(0.00002)</td><td>(0.00002)</td><td>(0.00002)</td><td>(0.00002)</td><td>(0.00002)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">b_mkt_fama_french_3fac1</td><td>0.001</td><td>0.001</td><td>0.001</td><td>0.001</td><td>0.001</td><td>0.0004</td><td>0.0001</td></tr>
-<tr><td style="text-align:left"></td><td>(0.005)</td><td>(0.005)</td><td>(0.005)</td><td>(0.005)</td><td>(0.005)</td><td>(0.005)</td><td>(0.005)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore</td><td></td><td>-0.001</td><td></td><td>0.004</td><td>-0.003</td><td>-0.017</td><td>0.002</td></tr>
-<tr><td style="text-align:left"></td><td></td><td>(0.001)</td><td></td><td>(0.013)</td><td>(0.014)</td><td>(0.015)</td><td>(0.023)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">EconomicGovernanceDimension</td><td></td><td></td><td>-0.006<sup>***</sup></td><td>-0.008</td><td>-0.003</td><td>0.001</td><td>0.002</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td>(0.002)</td><td>(0.006)</td><td>(0.006)</td><td>(0.007)</td><td>(0.007)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">EnvironmentalDimension</td><td></td><td></td><td>0.001</td><td>0.001</td><td>0.003</td><td>0.005</td><td>0.006<sup>*</sup></td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td>(0.001)</td><td>(0.003)</td><td>(0.003)</td><td>(0.003)</td><td>(0.003)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SocialDimension</td><td></td><td></td><td>0.003</td><td>0.001</td><td>0.005</td><td>0.009</td><td>0.009</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td>(0.002)</td><td>(0.005)</td><td>(0.005)</td><td>(0.006)</td><td>(0.006)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_CONDIS</td><td></td><td></td><td></td><td></td><td>-0.008<sup>**</sup></td><td></td><td>-0.021</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_CONSTAP</td><td></td><td></td><td></td><td></td><td>-0.002</td><td></td><td>0.015</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.008)</td><td></td><td>(0.018)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_ENERGY</td><td></td><td></td><td></td><td></td><td>-0.006</td><td></td><td>-0.018</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_FINL</td><td></td><td></td><td></td><td></td><td>-0.003</td><td></td><td>-0.019</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.018)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_HEALTH</td><td></td><td></td><td></td><td></td><td>-0.005</td><td></td><td>-0.023</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_INDL</td><td></td><td></td><td></td><td></td><td>-0.005</td><td></td><td>-0.019</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_REIT</td><td></td><td></td><td></td><td></td><td>-0.001</td><td></td><td>-0.019</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_TECH</td><td></td><td></td><td></td><td></td><td>0.00000</td><td></td><td>-0.021</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_TELECOM</td><td></td><td></td><td></td><td></td><td>-0.010<sup>**</sup></td><td></td><td>-0.022</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.005)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">SPGlobalESGScore:industry_UTIL</td><td></td><td></td><td></td><td></td><td>-0.004</td><td></td><td>-0.026</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.004)</td><td></td><td>(0.017)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_CONDIS</td><td></td><td></td><td></td><td></td><td></td><td>-0.155<sup>*</sup></td><td>0.251</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.088)</td><td>(0.348)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_CONSTAP</td><td></td><td></td><td></td><td></td><td></td><td>-0.065</td><td>-0.314</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.167)</td><td>(0.360)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_ENERGY</td><td></td><td></td><td></td><td></td><td></td><td>-0.151</td><td>0.191</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.096)</td><td>(0.359)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_FINL</td><td></td><td></td><td></td><td></td><td></td><td>0.005</td><td>0.356</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.123)</td><td>(0.420)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_HEALTH</td><td></td><td></td><td></td><td></td><td></td><td>-0.039</td><td>0.442</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.117)</td><td>(0.387)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_INDL</td><td></td><td></td><td></td><td></td><td></td><td>-0.085</td><td>0.280</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.085)</td><td>(0.346)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_REIT</td><td></td><td></td><td></td><td></td><td></td><td>0.100</td><td>0.439</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.135)</td><td>(0.395)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_TECH</td><td></td><td></td><td></td><td></td><td></td><td>0.105</td><td>0.516</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.096)</td><td>(0.353)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_TELECOM</td><td></td><td></td><td></td><td></td><td></td><td>-0.231<sup>*</sup></td><td>0.196</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.121)</td><td>(0.371)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">industry_UTIL</td><td></td><td></td><td></td><td></td><td></td><td>0.046</td><td>0.625</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.127)</td><td>(0.385)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td style="text-align:left">Constant</td><td>0.435<sup>***</sup></td><td>0.463<sup>***</sup></td><td>0.559<sup>***</sup></td><td>0.559<sup>***</sup></td><td>0.558<sup>***</sup></td><td>0.620<sup>***</sup></td><td>0.227</td></tr>
-<tr><td style="text-align:left"></td><td>(0.024)</td><td>(0.037)</td><td>(0.054)</td><td>(0.055)</td><td>(0.055)</td><td>(0.094)</td><td>(0.344)</td></tr>
-<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>658</td><td>658</td><td>658</td><td>658</td><td>658</td><td>658</td><td>658</td></tr>
-<tr><td style="text-align:left">R<sup>2</sup></td><td>0.068</td><td>0.069</td><td>0.077</td><td>0.077</td><td>0.115</td><td>0.131</td><td>0.135</td></tr>
-<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.061</td><td>0.061</td><td>0.066</td><td>0.064</td><td>0.089</td><td>0.105</td><td>0.096</td></tr>
-<tr><td style="text-align:left">Residual Std. Error</td><td>0.392 (df = 652)</td><td>0.392 (df = 651)</td><td>0.391 (df = 649)</td><td>0.392 (df = 648)</td><td>0.386 (df = 638)</td><td>0.383 (df = 638)</td><td>0.385 (df = 628)</td></tr>
-<tr><td style="text-align:left">F Statistic</td><td>9.528<sup>***</sup> (df = 5; 652)</td><td>8.085<sup>***</sup> (df = 6; 651)</td><td>6.781<sup>***</sup> (df = 8; 649)</td><td>6.028<sup>***</sup> (df = 9; 648)</td><td>4.378<sup>***</sup> (df = 19; 638)</td><td>5.076<sup>***</sup> (df = 19; 638)</td><td>3.393<sup>***</sup> (df = 29; 628)</td></tr>
-<tr><td colspan="8" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="7" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
-<tr><td style="text-align:left"></td><td colspan="7" style="text-align:right">Standard Errors are Heteroskedasticity Robust</td></tr>
+<tr><td colspan="10" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td colspan="9"><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="9" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td colspan="9">yearly_return</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td><td>(6)</td><td>(7)</td><td>(8)</td><td>(9)</td></tr>
+<tr><td colspan="10" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">mktcap</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><td style="text-align:left"></td><td>(0.00000)</td><td>(0.00000)</td><td>(0.00000)</td><td>(0.00000)</td><td>(0.00000)</td><td>(0.00000)</td><td>(0.00000)</td><td>(0.00000)</td><td>(0.00000)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">book_to_market1</td><td>-0.15347<sup>***</sup></td><td>-0.15387<sup>***</sup></td><td>-0.15069<sup>***</sup></td><td>-0.15038<sup>***</sup></td><td>-0.14023<sup>***</sup></td><td>-0.12085<sup>***</sup></td><td>-0.12088<sup>***</sup></td><td>-0.12364<sup>***</sup></td><td>-0.12492<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.02890)</td><td>(0.02889)</td><td>(0.02856)</td><td>(0.02853)</td><td>(0.03011)</td><td>(0.02939)</td><td>(0.02936)</td><td>(0.02975)</td><td>(0.03027)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">b_mkt_fama_french_3fac1</td><td>0.00082</td><td>0.00084</td><td>0.00111</td><td>0.00112</td><td>0.00142</td><td>0.00088</td><td>0.00102</td><td>0.00089</td><td>0.00059</td></tr>
+<tr><td style="text-align:left"></td><td>(0.00467)</td><td>(0.00467)</td><td>(0.00466)</td><td>(0.00466)</td><td>(0.00461)</td><td>(0.00447)</td><td>(0.00446)</td><td>(0.00444)</td><td>(0.00447)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore</td><td></td><td>-0.00040</td><td></td><td>0.00211</td><td>-0.00551</td><td>-0.00019</td><td></td><td>-0.01699</td><td>0.00487</td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.00081)</td><td></td><td>(0.01003)</td><td>(0.01100)</td><td>(0.00079)</td><td></td><td>(0.01108)</td><td>(0.02009)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">EconomicGovernanceDimension</td><td></td><td></td><td>-0.00412<sup>**</sup></td><td>-0.00507</td><td>0.00100</td><td></td><td>-0.00339<sup>*</sup></td><td>0.00423</td><td>0.00339</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.00184)</td><td>(0.00484)</td><td>(0.00487)</td><td></td><td>(0.00180)</td><td>(0.00518)</td><td>(0.00552)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">EnvironmentalDimension</td><td></td><td></td><td>0.00047</td><td>0.00005</td><td>0.00253</td><td></td><td>0.00022</td><td>0.00367</td><td>0.00334</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.00103)</td><td>(0.00206)</td><td>(0.00209)</td><td></td><td>(0.00101)</td><td>(0.00227)</td><td>(0.00246)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SocialDimension</td><td></td><td></td><td>0.00259</td><td>0.00185</td><td>0.00625</td><td></td><td>0.00261</td><td>0.00870<sup>*</sup></td><td>0.00773</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.00179)</td><td>(0.00419)</td><td>(0.00426)</td><td></td><td>(0.00174)</td><td>(0.00454)</td><td>(0.00484)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_CONDIS</td><td></td><td></td><td></td><td></td><td>-0.00714<sup>*</sup></td><td></td><td></td><td></td><td>-0.02079</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00366)</td><td></td><td></td><td></td><td>(0.01594)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_CONSTAP</td><td></td><td></td><td></td><td></td><td>-0.00412</td><td></td><td></td><td></td><td>0.01994</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00835)</td><td></td><td></td><td></td><td>(0.01619)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_ENERGY</td><td></td><td></td><td></td><td></td><td>-0.00831<sup>**</sup></td><td></td><td></td><td></td><td>-0.01802</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00380)</td><td></td><td></td><td></td><td>(0.01610)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_FINL</td><td></td><td></td><td></td><td></td><td>-0.00396</td><td></td><td></td><td></td><td>-0.01787</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00358)</td><td></td><td></td><td></td><td>(0.01590)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_HEALTH</td><td></td><td></td><td></td><td></td><td>-0.00526</td><td></td><td></td><td></td><td>-0.02365</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00383)</td><td></td><td></td><td></td><td>(0.01611)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_INDL</td><td></td><td></td><td></td><td></td><td>-0.00492</td><td></td><td></td><td></td><td>-0.01928</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00359)</td><td></td><td></td><td></td><td>(0.01588)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_REIT</td><td></td><td></td><td></td><td></td><td>-0.00383</td><td></td><td></td><td></td><td>-0.01900</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00385)</td><td></td><td></td><td></td><td>(0.01611)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_TECH</td><td></td><td></td><td></td><td></td><td>-0.00051</td><td></td><td></td><td></td><td>-0.02077</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00379)</td><td></td><td></td><td></td><td>(0.01600)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_TELECOM</td><td></td><td></td><td></td><td></td><td>-0.01098<sup>**</sup></td><td></td><td></td><td></td><td>-0.02159</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00438)</td><td></td><td></td><td></td><td>(0.01606)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">SPGlobalESGScore:industry_UTIL</td><td></td><td></td><td></td><td></td><td>-0.00418</td><td></td><td></td><td></td><td>-0.02585</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td>(0.00400)</td><td></td><td></td><td></td><td>(0.01613)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_CONDIS</td><td></td><td></td><td></td><td></td><td></td><td>-0.14310<sup>*</sup></td><td>-0.14068<sup>*</sup></td><td>-0.13720</td><td>0.26848</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.08165)</td><td>(0.08407)</td><td>(0.08345)</td><td>(0.32882)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_CONSTAP</td><td></td><td></td><td></td><td></td><td></td><td>-0.13320</td><td>-0.13874</td><td>-0.13440</td><td>-0.47610</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.17886)</td><td>(0.18617)</td><td>(0.18104)</td><td>(0.32523)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_ENERGY</td><td></td><td></td><td></td><td></td><td></td><td>-0.22542<sup>**</sup></td><td>-0.21142<sup>**</sup></td><td>-0.21844<sup>**</sup></td><td>0.11893</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.08890)</td><td>(0.09128)</td><td>(0.09093)</td><td>(0.33972)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_FINL</td><td></td><td></td><td></td><td></td><td></td><td>-0.08929</td><td>-0.07829</td><td>-0.05750</td><td>0.27170</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.07901)</td><td>(0.08167)</td><td>(0.08178)</td><td>(0.32864)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_HEALTH</td><td></td><td></td><td></td><td></td><td></td><td>-0.06695</td><td>-0.06019</td><td>-0.04504</td><td>0.45912</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.10753)</td><td>(0.10965)</td><td>(0.11183)</td><td>(0.36552)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_INDL</td><td></td><td></td><td></td><td></td><td></td><td>-0.08625</td><td>-0.08214</td><td>-0.08124</td><td>0.28806</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.07889)</td><td>(0.08128)</td><td>(0.08073)</td><td>(0.32632)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_REIT</td><td></td><td></td><td></td><td></td><td></td><td>-0.04031</td><td>-0.04206</td><td>-0.04346</td><td>0.31521</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.09962)</td><td>(0.10194)</td><td>(0.10180)</td><td>(0.34695)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_TECH</td><td></td><td></td><td></td><td></td><td></td><td>0.06074</td><td>0.06360</td><td>0.08084</td><td>0.48443</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.08655)</td><td>(0.08872)</td><td>(0.08942)</td><td>(0.33258)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_TELECOM</td><td></td><td></td><td></td><td></td><td></td><td>-0.28832<sup>**</sup></td><td>-0.28408<sup>**</sup></td><td>-0.26840<sup>**</sup></td><td>0.15610</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.11743)</td><td>(0.11915)</td><td>(0.11904)</td><td>(0.35435)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">industry_UTIL</td><td></td><td></td><td></td><td></td><td></td><td>0.01902</td><td>0.02801</td><td>0.02670</td><td>0.61800<sup>*</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td>(0.13471)</td><td>(0.13573)</td><td>(0.13498)</td><td>(0.37274)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>0.39025<sup>***</sup></td><td>0.40021<sup>***</sup></td><td>0.46285<sup>***</sup></td><td>0.46289<sup>***</sup></td><td>0.44450<sup>***</sup></td><td>0.46503<sup>***</sup></td><td>0.51149<sup>***</sup></td><td>0.50382<sup>***</sup></td><td>0.12221</td></tr>
+<tr><td style="text-align:left"></td><td>(0.02084)</td><td>(0.03088)</td><td>(0.04525)</td><td>(0.04524)</td><td>(0.04580)</td><td>(0.07943)</td><td>(0.08673)</td><td>(0.08606)</td><td>(0.32341)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="10" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>848</td><td>848</td><td>848</td><td>848</td><td>848</td><td>848</td><td>848</td><td>848</td><td>848</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.04410</td><td>0.04431</td><td>0.04852</td><td>0.04857</td><td>0.08092</td><td>0.08880</td><td>0.09169</td><td>0.09401</td><td>0.09918</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.04071</td><td>0.03978</td><td>0.04174</td><td>0.04064</td><td>0.06209</td><td>0.07349</td><td>0.07421</td><td>0.07545</td><td>0.06952</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>0.36588 (df = 844)</td><td>0.36605 (df = 843)</td><td>0.36568 (df = 841)</td><td>0.36589 (df = 840)</td><td>0.36177 (df = 830)</td><td>0.35957 (df = 833)</td><td>0.35943 (df = 831)</td><td>0.35919 (df = 830)</td><td>0.36034 (df = 820)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>12.98057<sup>***</sup> (df = 3; 844)</td><td>9.77245<sup>***</sup> (df = 4; 843)</td><td>7.14830<sup>***</sup> (df = 6; 841)</td><td>6.12580<sup>***</sup> (df = 7; 840)</td><td>4.29837<sup>***</sup> (df = 17; 830)</td><td>5.79858<sup>***</sup> (df = 14; 833)</td><td>5.24310<sup>***</sup> (df = 16; 831)</td><td>5.06625<sup>***</sup> (df = 17; 830)</td><td>3.34383<sup>***</sup> (df = 27; 820)</td></tr>
+<tr><td colspan="10" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="9" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+<tr><td style="text-align:left"></td><td colspan="9" style="text-align:right">Standard Errors are Heteroskedasticity Robust</td></tr>
 </table>
