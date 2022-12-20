@@ -4,7 +4,11 @@
 **final.xls** contains all the data from 2019-01-01 to 2021-12-31. The final regression was run on the 2021 data. It contains data queried using SQL from ***wrds.ipynb*** and those queried directly from the WRDS website. 
 
 # Regression Files
-***complete_regression_in_R.R*** contains all the regressions that we ran, and the code we used to get summary statistics as well as multicollinearity and heteroskedasticity check. 
+***complete_regression_in_R.R*** contains all the regressions that we ran, and the code we used to get summary statistics as well as multicollinearity and heteroskedasticity check. In the file, search for "Final_regression_paper" to locate the regression used in paper. 
+
+***complete_regression_with_suggestion_in_R.R***: implementation of prof. Nandi's suggestion. R squared did not improve and the result is difficult to interpret, thus it's not included in the final paper. 
+
+***Analysis.ipynb***: The deprecated regression based on the original fama french. 
 
 ### The Data has the following structure:
 ## Company Information
