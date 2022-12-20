@@ -108,7 +108,6 @@ stepVIF(reg3.5, threshold = 10, verbose = True)
 
 data_2021_renamed_summary <- data_2021_renamed_summary[complete.cases(data_2021_renamed_summary), ] 
 data_2021_renamed_summary <- na.omit(data_2021_renamed_summary)
-data_2021_corr <- data_2021_renamed_summary[, c(1,2,3,4,5,6,7,8,9,10)]
 
 corrplot(cor(data_2021_corr), addCoef.col = "black", tl.col = "black", tl.srt = 45)
 corrplot(cor(data_2021_corr), method = "color", type = "upper", order = "hclust", 
